@@ -1,1 +1,1 @@
-This directory touches on Python inport modules
+This directory holds learnings on inports and modules in Python
