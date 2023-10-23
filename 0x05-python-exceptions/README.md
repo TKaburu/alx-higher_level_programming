@@ -1,1 +1,1 @@
-This project touche on exceptions in Python
+This project touches on exceptions in Python
