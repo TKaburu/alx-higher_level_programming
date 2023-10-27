@@ -3,10 +3,10 @@
 """A module square"""
 
 
-class square:
+class Square:
     """
     Define a class
-    This clas check for the data
+    This class check for the data
     type and has  private attribute
     """
 
