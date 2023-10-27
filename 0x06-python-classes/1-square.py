@@ -4,7 +4,11 @@
 
 
 class square:
-    """ This square class has a private attribute size"""
+    """ 
+    This square class has a private attribute size
+    Arg:
+        size : This is the size of a side of a square
+    """
     
     def __init__(self, size):
         """ Initializing the square class """
