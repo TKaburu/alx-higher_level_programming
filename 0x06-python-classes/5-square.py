@@ -13,6 +13,7 @@ class Square:
             size : size of a side of the square
         """
         self.__size = size
+
     @property
     def size(self):
         """Getter method to retrieve the size of the square"""
@@ -30,15 +31,15 @@ class Square:
 
     def area(self):
         """This method calculates the area of the square"""
-        return (self.__size * self.__size)
-    
+        return(self.__size * self.__size)
+
     def my_print(self):
         """
         This method prints # to STDOUT
         or an empty string if size == 0
         """
         if self.size == 0:
-            print ()
+            print()
         else:
             for k in range(self.__size):
                 print("#" * self.__size)
