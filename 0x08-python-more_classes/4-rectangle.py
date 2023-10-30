@@ -73,6 +73,7 @@ class Rectangle:
             if t < self.height - 1:
                 rectangle_str += "\n"
         return (rectangle_str)
+
     def __repr__(self):
         if self.width == 0 or self.height == 0:
             return ""
