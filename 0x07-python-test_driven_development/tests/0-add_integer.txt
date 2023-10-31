@@ -1,0 +1,65 @@
+Tests for the def add_integer(a, b=98) function
+===============================================
+
+
+import add integer function
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+if both argument are integers	
+	>>> add_integer(5, 3)
+	8
+
+if an argument is negative
+	>>> add_integer(5, -3)
+	2
+	>>> add_integer(-5, 3)
+	-2
+
+if both arguments are negative integers
+	>>> add_integer(-5, -3)
+	-8
+
+if second argument is set eg b=98
+	>>> add_integer(3)
+	101
+
+if an argument is a float
+        >>> add_integer(5, 4.0)
+        9
+
+if an  argument is a str
+
+	>>> add_integer("Hello", 3)
+	Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+
+	>>> add_integer(5, "bye")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+	
+if both arguments are a str
+	>>> add_integer("Hi", "Bye")
+	Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+
+if no arguments are pased
+	>>> add_integer(None)
+	Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
+
+if an arguments is a list
+	>>> add_integer(5, [])
+	Traceback (most recent call last):
+                ...
+        TypeError: b must be an integer
+
+if the arguments is a tuple
+	>>> add_integer((5, 3))
+	Traceback (most recent call last):
+                ...
+        TypeError: a must be an integer
