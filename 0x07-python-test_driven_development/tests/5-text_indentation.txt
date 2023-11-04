@@ -1,0 +1,32 @@
+Tests for def text_indentation(text) function
+=============================================
+
+import function
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test for no arguments
+	>>> text_indentation()
+	Traceback (most recent call last):
+	    	...
+    	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test if argument is not string
+	>>> text_indentation(2317)
+	Traceback (most recent call last):
+	    	...
+    	TypeError: text must be a string
+
+Test if empty string
+	>>> text_indentation("")
+	Traceback (most recent call last):
+		...
+	ValueError: input must not be an empty string
+
+Test for correct output
+	>>> text_indentation("Hello, my name is: Tracey")
+	Hello, my name is:
+    	<BLANKLINE>
+     	Tracey
+
+	>>> text_indentation("apples, banana, cashew")
+	apples, banana, cashew	
