@@ -1,0 +1,29 @@
+Test for def print_sorted(self) method
+=======================================
+
+import the method
+	>>> MyList = __import__('1-my_list').MyList
+
+Checks for module docstring:
+         >>> m = __import__("1-my_list").__doc__
+         >>> len(m) > 1
+         True
+
+Checks if MyList inherits from list:
+	 >>> issubclass(MyList, list)
+	 True
+
+Checks if list already in correct order:
+	 >>> list.print_sorted()
+	 [1, 2, 3, 4]
+
+Checks if list is empty
+         >>> list = MyList()
+         >>> list.print_sorted()
+         []
+
+Checks if too many arguments:
+	 >>> l.print_sorted(1)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: print_sorted() takes 1 positional argument but 2 were given
