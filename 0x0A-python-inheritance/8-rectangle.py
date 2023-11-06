@@ -22,6 +22,11 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """ Define a child class Rectangle"""
     def __init__(self, width, height):
+        """
+        Args:
+            width: width of the rectangle
+            height: height of the rectangle
+        """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
 
