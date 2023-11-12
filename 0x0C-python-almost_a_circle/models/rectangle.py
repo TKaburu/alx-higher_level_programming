@@ -104,3 +104,12 @@ class Rectangle(Base):
     def __str__(self):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
+    def update(self, *args, **kwargs):
+        """ This method assigns an argument
+        to each attribute based on keywords
+        """
+        if args:
+            super().update(*args)
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
