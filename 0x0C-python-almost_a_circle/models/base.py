@@ -47,5 +47,5 @@ class Base:
             ob = object.to_dictionary()
             obls.append(ob)
         json_string = cls.to_json_string(obls)
-        with open(file_name, mode='w') as file:
+        with open(file_name, mode='w', encoding='utf-8') as file:
             file.write(json_string)
