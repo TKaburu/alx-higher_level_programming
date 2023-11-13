@@ -58,3 +58,11 @@ class Base:
         if json_string == 0:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ This method sets all attributes """
+        instance = cls(1, 1)
+        instance.update(**dictionary)
+
+        return (instance)
