@@ -66,14 +66,14 @@ class Rectangle(Base):
         return (self.__x)
 
     @x.setter
-    def x(self, data):
+    def x(self, value):
         """ This is x setter """
         if type(data) is not int:
             raise TypeError("x must be an integer")
         if data < 0:
             raise ValueError("x must be >= 0")
 
-        self.__x = data
+        self.__x = value
 
     @property
     def y(self):
@@ -81,14 +81,14 @@ class Rectangle(Base):
         return (self.__y)
 
     @y.setter
-    def y(self, data):
+    def y(self, value):
         """ This is y setter """
         if type(data) is not int:
             raise TypeError("y must be an integer")
         if data < 0:
             raise ValueError("y must be >= 0")
 
-        self.__y = data
+        self.__y = value
 
     def area(self):
         """ This method gets the area value of the triangle """
