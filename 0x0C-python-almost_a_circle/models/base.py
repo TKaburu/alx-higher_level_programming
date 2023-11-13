@@ -39,7 +39,7 @@ class Base:
         This class method writes the JSON string representation
         of list_objs to a file
         """
-        
+
         file_name = cls.__name__ + ".json"
         if list_objs is None:
             string = "[]"
@@ -90,4 +90,3 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
-
