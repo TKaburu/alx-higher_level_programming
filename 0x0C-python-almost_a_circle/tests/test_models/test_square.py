@@ -15,3 +15,7 @@ class TestSquare(unittest.TestCase):
     def test_inheritance(self):
         """ Checks if class inherits from another """
         self.assertTrue(issubclass(Square, Rectangle))
+
+if __name__ == '__main__':
+    """call for testing"""
+    unittest.main()
