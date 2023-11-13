@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
-""" import Json module """
+""" import os and Json module """
 
 
 import json
+import os
 
 """ Define parent class Base """
 
