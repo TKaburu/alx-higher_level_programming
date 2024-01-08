@@ -1,9 +1,8 @@
 #!/usr/bin/node
 
-// console.log('My number: ' prosess.argv[2])
-
 const argv1 = Number(process.argv[2]);
 
+// check if converting to number was successful
 if (!isNaN(argv1)) {
   console.log('My number: ' + Math.floor(process.argv[2]));
 } else {
