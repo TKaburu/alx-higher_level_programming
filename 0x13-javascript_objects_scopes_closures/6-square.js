@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const Rectangle = require('./5-rectangle');
+const Rectangle = require('./5-square');
 
 module.exports = class Square extends Rectangle {
   constructor (size) {
@@ -8,14 +8,15 @@ module.exports = class Square extends Rectangle {
   }
 
   charPrint (c) {
-    // Trying to use while loop
-    let i = 0;
-    while (i < this.height) {
-      if (c === undefined) {
-        c = 'X';
+    if (c === undefined) {
+      c = 'X';
+    }
+    for (let i = 0; i < this.width; i++) {
+      let row = '';
+      for (let j = 0; j < this.height; j++) {
+        row += c;
       }
-      console.log(c.repeat(this.width));
-      i++;
+      console.log(row);
     }
   }
 };
