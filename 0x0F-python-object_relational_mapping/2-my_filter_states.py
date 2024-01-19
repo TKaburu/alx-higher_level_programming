@@ -7,6 +7,7 @@ Display values in the states table where name matches the provided argument
 import MySQLdb
 import sys
 
+
 def display_states(username, password, database, state_name):
     """
     Connects to the database and displays values in the states table
@@ -43,13 +44,13 @@ def display_states(username, password, database, state_name):
     cursor.close()
     db.close()
 
+
 if __name__ == "__main__":
     # Check if all required arguments are provided
     if len(sys.argv) != 5:
         sys.exit(1)
 
     # Get arguments from the command line
-    username, password, database, state_name = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
-
+    username, password, database, state_name = sys.argv[1], sys.argv[2], \
+        sys.argv[3], sys.argv[4]
     display_states(username, password, database, state_name)
-
