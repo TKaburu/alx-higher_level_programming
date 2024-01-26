@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Sends a request, manages errors exceptions and print error code 
+Sends a request, manages errors exceptions and print error code
 """
 
 import sys
